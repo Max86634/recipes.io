@@ -1,0 +1,216 @@
+.body{
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    line-height: 75px;
+    color:#333;
+}
+*::before
+*::after{
+    box-sizing:border-box;
+
+}
+ h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/*container*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*intro*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("asets/images/EAT.jpg") center 
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    line-height: 1.1;
+    
+}
+.intro__inner{
+    width: 100%;
+    max-width: 880px;
+
+    text-align: center;
+
+}
+
+
+
+.intro__title{
+    color: azure;
+    font-size: 150px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    
+}
+.buttom{
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 10px;
+    font-size: 20px;
+    font-weight: 700;
+
+    border: 5px solid #fff;
+    
+    color: aliceblue;
+    
+    
+   
+    text-transform: uppercase;
+    
+    text-decoration: none;
+
+    
+
+     transition: background .1s
+     linear, color .1s linear;
+}
+.buttom:hover{
+    background-color: rgba(193, 121, 47, 1);
+    color: rgb(0, 0, 0);
+}
+/*Header*/
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-size: 50px;
+    font-weight: 700;
+    color: aliceblue;
+    text-shadow: 2px 3px rgba(196, 1, 66, 0.945);
+    animation: rty 5s infinite linear;
+
+}
+@keyframes rty{
+    0%{
+        transform: rotate(0);
+    }
+    30%{
+        transform: rotate(8deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    90%{
+        transform: rotate(-3deg);
+    }
+}
+.nav{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.nav__link{
+    color: white;
+    text-decoration: none;
+    text-align: top;
+    margin: 10px;
+    position: relative;
+
+    transition: color .2s linear;
+}
+.nav__link::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 15px;
+    
+
+    background-color:azure;
+    opacity: 0;
+
+
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    transition: opacity .1 linear;
+
+    
+
+
+}
+.nav__link:hover{
+    color: rgba(255, 0, 0, 0.452);
+}
+.nav__link:hover::after{
+   display: block;
+   opacity: 1;
+}
+/*pad*/
+.recepts{
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px crimson ;
+
+    text-align: center;
+    color: antiquewhite;
+    font-size: 50px;
+    text-shadow: 2.5px 2.5px rgba(196, 1, 66, 0.945);
+
+
+}
+.recp{
+    
+    margin: 0 auto;
+    
+    background-color: #4c4741;
+    font-size: 48px;
+    color: #ffbce7;
+    text-align: center;
+    text-shadow: none;
+    
+     
+    
+}
+.rew{
+    box-shadow: 0px 10px rgba(196, 1, 66, 0.945);
+   /*animation: rotate  2s infinite ease-in;*/
+    
+}
+.werty{
+    animation: gety 5s infinite linear;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+        
+    }
+    50%{
+        transform: rotate(2deg);
+    }
+    75%{
+        transform: rotate(-2deg);
+    }
+     100%{
+        transform: rotate(0);
+    }
+}
+
+@keyframes gety{
+    0%{
+        background-color: rgba(255, 0, 170, 0.212);
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+
+
